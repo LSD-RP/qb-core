@@ -11,6 +11,7 @@ QBShared.Jobs = {
                 payment = 10
             },
         },
+        whitelist = false,
 	},
 	['police'] = {
 		label = 'Law Enforcement',
@@ -78,6 +79,7 @@ QBShared.Jobs = {
                 isboss = true
             }
         },
+        whitelist = true,
 	},
 	['ambulance'] = {
 		label = 'EMS',
@@ -115,6 +117,7 @@ QBShared.Jobs = {
                 payment = 150
             }
         },
+        whitelist = true,
 	},
 	['realestate'] = {
 		label = 'Real Estate',
@@ -143,6 +146,7 @@ QBShared.Jobs = {
                 payment = 150
             },
         },
+        whitelist = true,
 	},
 	['taxi'] = {
 		label = 'Taxi',
@@ -154,23 +158,24 @@ QBShared.Jobs = {
                 payment = 50
             },
 			['1'] = {
-                name = 'Driver',
+                name = 'Cabby',
                 payment = 75
             },
 			['2'] = {
-                name = 'Event Driver',
+                name = 'Experienced',
                 payment = 100
             },
 			['3'] = {
-                name = 'Sales',
+                name = 'Uber Cabby',
                 payment = 125
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Lead Cabby',
 				isboss = true,
                 payment = 150
             },
         },
+        whitelist = true,
 	},
      ['bus'] = {
 		label = 'Bus',
@@ -182,6 +187,7 @@ QBShared.Jobs = {
                 payment = 50
             },
 		},
+        whitelist = false
 	},
 	['cardealer'] = {
 		label = 'Vehicle Dealer',
@@ -210,6 +216,7 @@ QBShared.Jobs = {
                 payment = 150
             },
         },
+        whitelist = true
 	},
 	['mechanic'] = {
 		label = 'Mechanic',
@@ -238,6 +245,7 @@ QBShared.Jobs = {
                 payment = 150
             },
         },
+        whitelist = true
 	},
 	['judge'] = {
 		label = 'Honorary',
@@ -249,6 +257,7 @@ QBShared.Jobs = {
                 payment = 100
             },
         },
+        whitelist = true,
 	},
 	['lawyer'] = {
 		label = 'Law Firm',
@@ -260,6 +269,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = true
 	},
 	['reporter'] = {
 		label = 'Reporter',
@@ -271,6 +281,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false,
 	},
 	['trucker'] = {
 		label = 'Trucker',
@@ -282,6 +293,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false,
 	},
 	['tow'] = {
 		label = 'Towing',
@@ -293,6 +305,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false,
 	},
 	['garbage'] = {
 		label = 'Garbage',
@@ -304,6 +317,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false,
 	},
 	['vineyard'] = {
 		label = 'Vineyard',
@@ -315,6 +329,7 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false,
 	},
 	['hotdog'] = {
 		label = 'Hotdog',
@@ -326,5 +341,6 @@ QBShared.Jobs = {
                 payment = 50
             },
         },
+        whitelist = false
 	},
 }
