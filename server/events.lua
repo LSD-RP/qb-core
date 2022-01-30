@@ -155,14 +155,15 @@ end)
 RegisterNetEvent('QBCore:ToggleDuty', function()
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    if Player.PlayerData.job.onduty then
-        Player.Functions.SetJobDuty(false)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('info.off_duty'))
-    else
-        Player.Functions.SetJobDuty(true)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('info.on_duty'))
-    end
-    TriggerClientEvent('QBCore:Client:SetDuty', src, Player.PlayerData.job.onduty)
+    TriggerClientEvent("qb_multijob:externalOpen", src)
+    -- if Player.PlayerData.job.onduty then
+    --     Player.Functions.SetJobDuty(false)
+    --     TriggerClientEvent('QBCore:Notify', src, Lang:t('info.off_duty'))
+    -- else
+    --     Player.Functions.SetJobDuty(true)
+    --     TriggerClientEvent('QBCore:Notify', src, Lang:t('info.on_duty'))
+    -- end
+    -- TriggerClientEvent('QBCore:Client:SetDuty', src, Player.PlayerData.job.onduty)
 end)
 
 -- Items
