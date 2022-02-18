@@ -5400,5 +5400,5 @@ QBShared.Vehicles = {
 		['category'] = 'planes',
 		['hash'] = `nimbus`,
 		['shop'] = 'air',
-	},
+	}
 }
