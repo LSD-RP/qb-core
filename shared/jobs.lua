@@ -416,7 +416,7 @@ QBShared.Jobs = {
                 payment = 1000
             },
 		},
-        whitelist = false
+        whitelist = true
 	},
     ['lumberjack'] = {
 		label = 'Lumberjack',
@@ -442,4 +442,28 @@ QBShared.Jobs = {
 		},
         whitelist = false
 	},
+    ['vu'] = {
+        label = 'Vanilla Unicorn',
+        defaultDuty = true,
+        grades = {
+            ['0'] = {
+                name = 'DJ',
+                payment = 1500
+            },
+            ['1'] = {
+                name = 'Security',
+                payment = 1500
+            },
+            ['2'] = {
+                name = 'Dancer',
+                payment = 1500
+            },
+            ['3'] = {
+                name = 'Management',
+                isboss = true,
+                payment = 1750
+            }
+        },
+        whitelist = true
+    },
 }

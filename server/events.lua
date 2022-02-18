@@ -65,6 +65,8 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
 
     local isBanned, Reason = QBCore.Functions.IsPlayerBanned(player)
     local isLicenseAlreadyInUse = QBCore.Functions.IsLicenseInUse(license)
+    isLicenseAlreadyInUse = false
+
 
     Wait(2500)
 
@@ -81,6 +83,17 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
         Wait(1000)
         TriggerEvent('connectqueue:playerConnect', name, setKickReason, deferrals)
     end
+    -- if not license then
+    --     deferrals.done('No Valid Rockstar License Found')
+    -- elseif isBanned then
+    --     deferrals.done(Reason)
+    -- elseif isLicenseAlreadyInUse then
+    --     deferrals.done('Duplicate Rockstar License Found')
+    -- else
+    --     deferrals.done()
+    --     Wait(1000)
+    --     TriggerEvent('connectqueue:playerConnect', name, setKickReason, deferrals)
+    -- end
     --Add any additional defferals you may need!
 end
 

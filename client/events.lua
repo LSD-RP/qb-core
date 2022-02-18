@@ -140,3 +140,90 @@ RegisterNetEvent('QBCore:Command:ShowMe3D', function(senderId, msg)
         end
     end)
 end)
+
+-- Stop vehicles from spawning naturally
+SetVehicleModelIsSuppressed(`rubble`, true)
+SetVehicleModelIsSuppressed(`dump`, true)
+SetVehicleModelIsSuppressed(`taco`, true)
+SetVehicleModelIsSuppressed(`biff`, true)
+SetVehicleModelIsSuppressed(`hydra`, true)
+SetVehicleModelIsSuppressed(`rhino`, true)
+SetVehicleModelIsSuppressed(`polmav`, true)
+SetVehicleModelIsSuppressed(`blimp`, true)
+SetVehicleModelIsSuppressed(`blimp2`, true)
+SetVehicleModelIsSuppressed(`lazer`, true)
+SetVehicleModelIsSuppressed(`policeb`, true)
+SetVehicleModelIsSuppressed(`buzzard2`, true)
+SetVehicleModelIsSuppressed(`cargoplane`, true)
+SetVehicleModelIsSuppressed(`buzzard`, true)
+SetVehicleModelIsSuppressed(`cargobob`, true)
+
+
+--  -----------------Pause menu overrides--------------------------
+Citizen.CreateThread(function()
+    AddTextEntry('FE_THDR_GTAO', 'Welcome to Little Seoul District - You are Id ' ..GetPlayerServerId(PlayerId()).. ' ')
+    AddTextEntry('PM_PANE_LEAVE', '~r~Return to the server list.')
+    AddTextEntry('PM_PANE_QUIT', '~r~Quit')
+    AddTextEntry('PM_SCR_MAP', '~r~Map')
+    AddTextEntry('PM_SCR_GAM', '~r~Take the plane')
+    AddTextEntry('PM_SCR_INF', '~r~Logs')
+    AddTextEntry('PM_SCR_SET', '~r~Settings')
+    AddTextEntry('PM_SCR_STA', '~r~Stats')
+    SetMissionName_2(true, "Welcome to the city, Have fun dont be a jerk")
+    AddTextEntry('PM_SCR_RPL', '~r~∑ Editor')
+  end)
+
+  -----------------Weapon damage overrides------------------------
+Citizen.CreateThread(function()
+	SetWeaponDamageModifier(`WEAPON_UNARMED`, 0.25)
+	SetWeaponDamageModifier(`WEAPON_NIGHTSTICK`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_GRENADE`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_MOLOTOV`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_STICKYBOMB`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_PIPEBOMB`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_BALL`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_FLARE`, 0.3)
+	SetWeaponDamageModifier(`WEAPON_RAYPISTOL`, 0.01)
+    SetWeaponDamageModifier(`WEAPON_STUNGUN`, 0.00)
+	-- SetWeaponDamageModifier(`WEAPON_RPG`, 0.1)
+end)
+  
+
+local knockedOut = false
+local wait = 15
+local count = 25
+
+Citizen.CreateThread(function()
+	while true do
+		Wait(10)
+		local myPed = PlayerPedId()
+		if IsPedInMeleeCombat(myPed) then
+			if GetEntityHealth(myPed) < 115 then
+				SetPlayerInvincible(PlayerId(), true)
+				SetPedToRagdoll(myPed, 1000, 1000, 0, 0, 0, 0)
+                QBCore.Functions.Notify("You've been knocked out!")
+				wait = 15
+				knockedOut = true
+				SetEntityHealth(myPed, 116)
+			end
+		end
+		if knockedOut == true then
+			SetPlayerInvincible(PlayerId(), true)
+			DisablePlayerFiring(PlayerId(), true)
+			SetPedToRagdoll(myPed, 1000, 1000, 0, 0, 0, 0)
+			ResetPedRagdollTimer(myPed)
+			
+			if wait >= 0 then
+				count = count - 1
+				if count == 0 then
+					count = 25
+					wait = wait - 1
+					SetEntityHealth(myPed, GetEntityHealth(myPed)+4)
+				end
+			else
+				SetPlayerInvincible(PlayerId(), false)
+				knockedOut = false
+			end
+		end
+	end
+end)
