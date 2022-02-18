@@ -34,6 +34,7 @@ QBConfig.Server.uptime = 0 -- Time the server has been up.
 QBConfig.Server.whitelist = false -- Enable or disable whitelist on the server
 QBConfig.Server.pvp = true -- Enable or disable pvp on the server (Ability to shoot other players)
 QBConfig.Server.discord = "https://discord.gg/dP5bCcm5WP" -- Discord invite link
+QBConfig.Server.checkDuplicateLicense = false -- check for duplicate rockstar license on join
 QBConfig.Server.PermissionList = {} -- permission list
 
 QBConfig.Notify = {}
