@@ -188,7 +188,7 @@ QBShared.Jobs = {
                 payment = 2500
             },
         },
-        whitelist = true,
+        whitelist = false,
 	},
     ['bus'] = {
 		label = 'Bus',
@@ -279,7 +279,16 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Associate',
-                payment = 2250
+                payment = 1250
+            },
+            ['1'] = {
+                name = 'Lawyer',
+                payment = 1500
+            },
+            ['2'] = {
+                name = 'Attorney General',
+                payment = 1750,
+                isboss = true
             },
         },
         whitelist = true
@@ -430,6 +439,18 @@ QBShared.Jobs = {
 		},
         whitelist = false
 	},
+    ['fd'] = {
+		label = 'Fire Department',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Recruit',
+                payment = 1000
+            },
+		},
+        whitelist = true
+	},
     ['taco'] = {
 		label = 'Taco Sales',
 		defaultDuty = true,
@@ -447,19 +468,19 @@ QBShared.Jobs = {
         defaultDuty = true,
         grades = {
             ['0'] = {
-                name = 'DJ',
+                name = 'Bouncer',
                 payment = 1500
             },
             ['1'] = {
-                name = 'Security',
+                name = 'Bartender',
                 payment = 1500
             },
             ['2'] = {
-                name = 'Dancer',
+                name = 'Stripper',
                 payment = 1500
             },
             ['3'] = {
-                name = 'Management',
+                name = 'Boss',
                 isboss = true,
                 payment = 1750
             }
