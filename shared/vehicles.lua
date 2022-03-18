@@ -2038,7 +2038,7 @@ QBShared.Vehicles = {
 		['brand'] = 'Mil-Spec',
 		['model'] = 'patriot3',
 		['price'] = 110000,
-		['category'] = 'off-road',
+		['category'] = 'offroad',
 		['hash'] = `patriot3`,
 		['shop'] = 'pdm',
 	},
