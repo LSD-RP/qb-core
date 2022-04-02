@@ -445,11 +445,28 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 1000
+                name = 'Recruit.',
+                payment = 1950
             },
-		},
-        whitelist = true
+			['1'] = {
+                name = 'Lieutenant',
+                payment = 2000
+            },
+			['2'] = {
+                name = 'Captain',
+                payment = 2150
+            },
+			['3'] = {
+                name = 'Battalion Chief.',
+                payment = 2250
+            },
+			['4'] = {
+                name = 'Fire Chief',
+				isboss = true,
+                payment = 2500
+            },
+        },
+        whitelist = false
 	},
     ['taco'] = {
 		label = 'Taco Sales',
