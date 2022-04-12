@@ -223,6 +223,8 @@ Citizen.CreateThread(function()
 			end
 		end
 	end
+
+end)
 -- Listen to Shared being updated
 RegisterNetEvent('QBCore:Client:OnSharedUpdate', function(tableName, key, value)
     QBCore.Shared[tableName][key] = value

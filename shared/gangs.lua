@@ -115,5 +115,23 @@ QBShared.Gangs = {
 				isboss = true
             },
         },
+	},
+	['rollin50scrips'] = {
+		label = "Rollin' 50's Crips",
+		grades = {
+            ['0'] = {
+                name = 'Recruit'
+            },
+			['1'] = {
+                name = 'Enforcer'
+            },
+			['2'] = {
+                name = 'Shot Caller'
+            },
+			['3'] = {
+                name = 'Boss',
+				isboss = true
+            },
+        },
 	}
 }
