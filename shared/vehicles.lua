@@ -6287,15 +6287,6 @@ QBShared.Vehicles = {
 		['category'] = 'suvs',
 		['hash'] = `wrangler86`,
 		['shop'] = 'pdm',
-	},
-	['x5mcompetition'] = {
-		['name'] = 'X5M Competition',
-		['brand'] = 'BMW',
-		['model'] = 'x5mcompetition',
-		['price'] = 175000,
-		['category'] = 'suvs',
-		['hash'] = `x5mcompetition`,
-		['shop'] = 'luxury',
-	},
+	}
 
 }
