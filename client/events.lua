@@ -124,7 +124,7 @@ RegisterNetEvent('QBCore:Command:SpawnVehicle', function(vehName)
     if not IsModelInCdimage(hash) then return end
     RequestModel(hash)
     while not HasModelLoaded(hash) do
-        Wait(0)
+        Wait(1)
     end
         
      if IsPedInAnyVehicle(ped) then 
@@ -209,7 +209,7 @@ RegisterNetEvent('QBCore:Command:ShowMe3D', function(senderId, msg)
             local targetPed = GetPlayerPed(sender)
             local tCoords = GetEntityCoords(targetPed)
             Draw3DText(tCoords, msg)
-            Wait(0)
+            Wait(1)
         end
     end)
 end)
