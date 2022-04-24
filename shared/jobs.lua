@@ -32,44 +32,44 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'Recruit.',
-                payment = 1450
+                payment = 1500
             },
 			['1'] = {
                 name = 'Officer.',
-                payment = 1500
+                payment = 1600
             },
 			['2'] = {
                 name = 'Sr. Officer.',
-                payment = 1600
-            },
-			['3'] = {
-                name = 'Trooper.',
                 payment = 1700
             },
-			['4'] = {
-                name = 'Detective.',
-                payment = 1800
-            },
+			-- ['3'] = {
+            --     name = 'Trooper.',
+            --     payment = 1700
+            -- },
+			-- ['4'] = {
+            --     name = 'Detective.',
+            --     payment = 1800
+            -- },
             ['5'] = {
                 name = 'Sergeant.',
-                payment = 1900
+                payment = 1800
             },
             ['6'] = {
                 name = 'Lieutenant.',
-                payment = 150
+                payment = 1900
             },
             ['7'] = {
                 name = 'Captain.',
                 payment = 2000
             },
-            ['8'] = {
-                name = 'Commander.',
-                payment = 2100
-            },
-            ['9'] = {
-                name = 'Deputy Chief.',
-                payment = 2250
-            },
+            -- ['8'] = {
+            --     name = 'Commander.',
+            --     payment = 2100
+            -- },
+            -- ['9'] = {
+            --     name = 'Deputy Chief.',
+            --     payment = 2250
+            -- },
             ['10'] = {
                 name = 'Assistant Chief.',
                 payment = 2500,
@@ -80,16 +80,16 @@ QBShared.Jobs = {
                 payment = 2500,
                 isboss = true
             },
-            ['12'] = {
-                name = 'Commissioner.',
-                payment = 2500,
-                isboss = true
-            },
-            ['13'] = {
-                name = 'Sheriff.',
-                payment = 2000,
-                isboss = true
-            }
+            -- ['12'] = {
+            --     name = 'Commissioner.',
+            --     payment = 2500,
+            --     isboss = true
+            -- },
+            -- ['13'] = {
+            --     name = 'Sheriff.',
+            --     payment = 2000,
+            --     isboss = true
+            -- }
         },
         whitelist = true,
 	},
