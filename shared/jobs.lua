@@ -100,28 +100,28 @@ QBShared.Jobs = {
 		grades = {
             ['0'] = {
                 name = 'EMR.',
-                payment = 1950
+                payment = 1900
             },
 			['1'] = {
                 name = 'EMT.',
-                payment = 2000
+                payment = 1950
             },
 			['2'] = {
                 name = 'Advanced EMT.',
-                payment = 2250
+                payment = 2100
             },
 			['3'] = {
                 name = 'Paramedic',
-                payment = 2300
+                payment = 2200
             },
 			['4'] = {
                 name = 'Critical Care Paramedic.',
-                payment = 2500
+                payment = 2300
             },
             ['5'] = {
                 name = 'Administrator',
                 isboss = true,
-                payment = 2500
+                payment = 2450
             },
             ['6'] = {
                 name = 'Chief of Medicine',
@@ -384,6 +384,31 @@ QBShared.Jobs = {
             },
             ['3'] = {
                 name = 'Big Shot',
+                payment = 1750,
+                isboss = true
+            },
+        },
+        whitelist = true
+	},
+    ['limeys'] = {
+		label = 'Limeys',
+		defaultDuty = true,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = 'Cashier',
+                payment = 1000
+            },
+            ['1'] = {
+                name = 'Mixer',
+                payment = 1250
+            },
+            ['2'] = {
+                name = 'Manager',
+                payment = 1500
+            },
+            ['3'] = {
+                name = 'Top Dog',
                 payment = 1750,
                 isboss = true
             },
