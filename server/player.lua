@@ -66,7 +66,7 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
         PlayerData.name = GetPlayerName(source)
         Offline = false
     end
-    
+
     PlayerData.citizenid = PlayerData.citizenid or QBCore.Player.CreateCitizenId()
     PlayerData.cid = PlayerData.cid or 1
     PlayerData.money = PlayerData.money or {}
@@ -82,7 +82,7 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
     PlayerData.charinfo.gender = PlayerData.charinfo.gender or 0
     PlayerData.charinfo.backstory = PlayerData.charinfo.backstory or 'placeholder backstory'
     PlayerData.charinfo.nationality = PlayerData.charinfo.nationality or 'USA'
-    PlayerData.charinfo.phone = tonumber(PlayerData.charinfo.phone) or QBCore.Functions.CreatePhoneNumber()
+    PlayerData.charinfo.phone = PlayerData.charinfo.phone or QBCore.Functions.CreatePhoneNumber()
     PlayerData.charinfo.account = PlayerData.charinfo.account or QBCore.Functions.CreateAccountNumber()
     -- Metadata
     PlayerData.metadata = PlayerData.metadata or {}
@@ -327,7 +327,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
                 TriggerClientEvent('qb-phone:client:RemoveBankMoney', self.PlayerData.source, amount)
             end
         end
-        
+
         return true
     end
 
@@ -536,7 +536,7 @@ function QBCore.Player.CreatePlayer(PlayerData, Offline)
     else
         QBCore.Players[self.PlayerData.source] = self
         QBCore.Player.Save(self.PlayerData.source)
-    
+
         -- At this point we are safe to emit new instance to third party resource for load handling
         TriggerEvent('QBCore:Server:PlayerLoaded', self)
         self.Functions.UpdatePlayerData()
@@ -612,19 +612,19 @@ function QBCore.Player.DeleteCharacter(source, citizenid)
     local result = MySQL.scalar.await('SELECT license FROM players where citizenid = ?', { citizenid })
     if license == result then
         local query = "DELETE FROM %s WHERE citizenid = ?"
-		local tableCount = #playertables
-		local queries = table.create(tableCount, 0)
+        local tableCount = #playertables
+        local queries = table.create(tableCount, 0)
 
-		for i = 1, tableCount do
-			local v = playertables[i]
-			queries[i] = {query = query:format(v.table), values = { citizenid }}
-		end
+        for i = 1, tableCount do
+            local v = playertables[i]
+            queries[i] = {query = query:format(v.table), values = { citizenid }}
+        end
 
         MySQL.transaction(queries, function(result2)
-			if result2 then
-				TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Character Deleted', 'red', '**' .. GetPlayerName(source) .. '** ' .. license .. ' deleted **' .. citizenid .. '**..')
+            if result2 then
+                TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Character Deleted', 'red', '**' .. GetPlayerName(source) .. '** ' .. license .. ' deleted **' .. citizenid .. '**..')
             end
-		end)
+        end)
     else
         DropPlayer(source, 'You Have Been Kicked For Exploitation')
         TriggerEvent('qb-log:server:CreateLog', 'anticheat', 'Anti-Cheat', 'white', GetPlayerName(source) .. ' Has Been Dropped For Character Deletion Exploit', true)
@@ -781,7 +781,7 @@ function QBCore.Functions.CreatePhoneNumber()
     local UniqueFound = false
     local PhoneNumber = nil
     while not UniqueFound do
-        PhoneNumber = tonumber(math.random(100,999) .. math.random(1000000,9999999))
+        PhoneNumber = math.random(100,999) .. math.random(1000000,9999999)
         local query = '%' .. PhoneNumber .. '%'
         local result = MySQL.prepare.await('SELECT COUNT(*) as count FROM players WHERE charinfo LIKE ?', { query })
         if result == 0 then
