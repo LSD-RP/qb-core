@@ -589,6 +589,7 @@ end
 
 function QBCore.Functions.SetVehicleProperties(vehicle, props)
     if DoesEntityExist(vehicle) then
+        print(props)
         if props.extras then
             for id, enabled in pairs(props.extras) do
                 if enabled then

@@ -622,7 +622,7 @@ QBShared.Items = {
 	['cocacola'] 					= {['name'] = 'cocacola', 			  	  		['label'] = 'CocaCola', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'cocacola.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Probably have some issues with your blood suger level'},
 
 
-	-- herbs
+	-- witch craft items
 	["chamomile"] 					= {["name"] = "chamomile", 			  	  		["label"] = "Chamomile", 				["weight"] = 5, 		["type"] = "item", 		["image"] = "chamomile.png", 	    	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Base Potion Ingredient"},
 	["lavender"] 					= {["name"] = "lavender", 			  	  		["label"] = "Lavender", 				["weight"] = 5, 		["type"] = "item", 		["image"] = "lavender.png", 	    	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Base Potion Ingredient"},
 	["rosemary"] 					= {["name"] = "rosemary", 			  	  		["label"] = "Rosemary", 				["weight"] = 5, 		["type"] = "item", 		["image"] = "rosemary.png", 	    	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Base Potion Ingredient"},

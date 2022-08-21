@@ -6290,15 +6290,6 @@ QBShared.Vehicles = {
 		['hash'] = `13genesis`,
 		['shop'] = 'pdm',
 	},
-	['30822'] = {
-		['name'] = '2022 308',
-		['brand'] = 'Peugeot',
-		['model'] = '30822',
-		['price'] = 75000,
-		['category'] = 'compacts',
-		['hash'] = `30822`,
-		['shop'] = 'pdm',
-	},
 	['a45amg'] = {
 		['name'] = 'A45 AMG',
 		['brand'] = 'Mercedes',
