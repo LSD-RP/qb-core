@@ -7586,7 +7586,6 @@ QBShared.Vehicles = {
 		['hash'] = `corsita`,
 		['shop'] = 'luxury',
 	},
-
 	['conada'] = {
 		['name'] = 'Conada',
 		['brand'] = 'Buckingham',
@@ -7596,7 +7595,33 @@ QBShared.Vehicles = {
 		['hash'] = `conada`,
 		['shop'] = 'air',
 	},
-
+	['ruiner4'] = {
+        ['name'] = 'Ruiner ZZ-8',
+        ['brand'] = 'Imponte',
+        ['model'] = 'ruiner4',
+        ['price'] = 85000,
+        ['category'] = 'muscle',
+        ['hash'] = `ruiner4`,
+        ['shop'] = 'pdm',
+    },
+	['draugur'] = {
+        ['name'] = 'Draugur',
+        ['brand'] = 'Declasse',
+        ['model'] = 'draugur',
+        ['price'] = 120000,
+        ['category'] = 'offroad',
+        ['hash'] = `draugur`,
+        ['shop'] = 'pdm',
+    },
+	['sm722'] = {
+        ['name'] = 'SM 722',
+        ['brand'] = 'Benefactor',
+        ['model'] = 'sm722',
+        ['price'] = 175000,
+        ['category'] = 'sports',
+        ['hash'] = `sm722`,
+        ['shop'] = 'luxury',
+    },
 
 }
 
