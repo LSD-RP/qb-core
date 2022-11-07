@@ -32,6 +32,7 @@ QBShared.Items = {
 	['weapon_ssbat2'] 		 		 = {['name'] = 'weapon_ssbat2', 		 		['label'] = 'Bat', 	        			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_SSBAT2.png', 		['unique'] = true, 		['useable'] = true, 	['description'] = 'Bat'},
 	['weapon_throwingaxe'] 		 	 = {['name'] = 'weapon_throwingaxe', 		 	['label'] = 'Throwing Axe', 	        ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_THROWINGAXE.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Throwing Axe'},
 	['weapon_hose'] 		 	 	 = {['name'] = 'weapon_hose', 		 			['label'] = 'Fire Hose', 	        	['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_HOSE.png', 			['unique'] = true, 		['useable'] = true, 	['description'] = 'Fire Hose'},
+	['weapon_metaldetector'] 		 = {['name'] = 'weapon_metaldetector', 		 	['label'] = 'Metal Detector', 	        ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_METALDETECTOR.png', ['unique'] = true, 		['useable'] = true, 	['description'] = 'Metal Detector'},
 
 
 	-- Handguns
@@ -89,6 +90,7 @@ QBShared.Items = {
 	['weapon_specialcarbine_mk2']	 = {['name'] = 'weapon_specialcarbine_mk2', 	['label'] = 'Special Carbine Mk II',    ['weight'] = 1000, 	    ['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_specialcarbine_mk2.png', ['unique'] = true, ['useable'] = true, 	['description'] = 'Weapon Wpecialcarbine MK2'},
 	['weapon_bullpuprifle_mk2']		 = {['name'] = 'weapon_bullpuprifle_mk2', 		['label'] = 'Bullpup Rifle Mk II',		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_bullpuprifle_mk2.png', ['unique'] = true, 	['useable'] = true, 	['description'] = 'Bull Puprifle MK2'},
 	['weapon_militaryrifle']		 = {['name'] = 'weapon_militaryrifle', 		 	['label'] = 'Military Rifle',		    ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_militaryrifle.png', ['unique'] = true, 		['useable'] = true, 	['description'] = 'Weapon Militaryrifle'},
+	['weapon_tacticalrifle']		 = {['name'] = 'weapon_tacticalrifle', 		 	['label'] = 'Tactical Rifle',		    ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RIFLE',			['image'] = 'weapon_tacticalrifle.png', ['unique'] = true, 		['useable'] = true, 	['description'] = 'Weapon Tactical Rifle'},
 
 	-- Light Machine Guns
 	['weapon_mg'] 					 = {['name'] = 'weapon_mg', 				 	['label'] = 'Machinegun', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_MG',				['image'] = 'weapon_mg.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'An automatic gun that fires bullets in rapid succession for as long as the trigger is pressed'},
@@ -103,6 +105,7 @@ QBShared.Items = {
 	['weapon_remotesniper'] 		 = {['name'] = 'weapon_remotesniper', 	 	  	['label'] = 'Remote Sniper', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER_REMOTE',	['image'] = 'weapon_remotesniper.png', 	 ['unique'] = true, 	['useable'] = false, 	['description'] = 'A portable high-precision, long-range rifle'},
 	['weapon_heavysniper_mk2']		 = {['name'] = 'weapon_heavysniper_mk2', 		['label'] = 'Heavy Sniper Mk II',	    ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'weapon_heavysniper_mk2.png', ['unique'] = true, 	['useable'] = true, 	['description'] = 'Weapon Heavysniper MK2'},
 	['weapon_marksmanrifle_mk2']	 = {['name'] = 'weapon_marksmanrifle_mk2', 		['label'] = 'Marksman Rifle Mk II',	    ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'weapon_marksmanrifle_mk2.png',	['unique'] = true, 	['useable'] = true, 	['description'] = 'Weapon Marksmanrifle MK2'},
+	['weapon_precisionrifle'] 		 = {['name'] = 'weapon_precisionrifle', 	 	['label'] = 'Precision Rifle', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'weapon_precisionrifle.png', ['unique'] = true, 	['useable'] = false, 	['description'] = 'A very accurate single-fire rifle'},
 
 	-- Heavy Weapons
 	['weapon_rpg'] 					 = {['name'] = 'weapon_rpg', 			      	['label'] = 'RPG', 						['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RPG',				['image'] = 'weapon_rpg.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'A rocket-propelled grenade launcher'},
@@ -673,6 +676,9 @@ QBShared.Items = {
 	["whitecrystal"] 				= {["name"] = "whitecrystal", 			  	  	["label"] = "White Crystal", 			["weight"] = 5, 		["type"] = "item", 		["image"] = "whitecrystal.png", 	    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Potion Aspect Modifier"},
 	["tigerseye"] 					= {["name"] = "tigerseye", 			  	  		["label"] = "Tigers Eye", 				["weight"] = 5, 		["type"] = "item", 		["image"] = "tigerseye.png", 	    	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Potion Aspect Modifier"},
 
+	-- train robbery
+	["stolen_gold"] 				= {["name"] = "stolen_gold", 			  	  	["label"] = "Gold", 					["weight"] = 1000, 		["type"] = "item", 		["image"] = "stolen_gold.png", 	    	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Gold stolen from a train"},
+	["grinder"] 					= {["name"] = "grinder", 			  	  		["label"] = "Angle Grinder", 			["weight"] = 1000, 		["type"] = "item", 		["image"] = "grinder.png", 	    		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Tool used to cut things"},
 
 
 
