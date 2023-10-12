@@ -1,5 +1,5 @@
 QBShared = QBShared or {}
-QBShared.VehicleHashes = {}
+QBShared.Vehicles = QBShared.Vehicles or {}
 
 QBShared.Vehicles = {
 	--- Compacts
@@ -9046,6 +9046,16 @@ QBShared.Vehicles = {
 
 }
 
-for _, v in pairs(QBShared.Vehicles) do
-    QBShared.VehicleHashes[v.hash] = v
+for i=1, #Vehicles do
+    QBShared.Vehicles[Vehicles[i].model] = {
+        spawncode = Vehicles[i].model,
+        name = Vehicles[i].name,
+        brand = Vehicles[i].brand,
+        model = Vehicles[i].model,
+        price = Vehicles[i].price,
+        category = Vehicles[i].categoryLabel:gsub("%s+", ""):lower(),
+        categoryLabel = Vehicles[i].categoryLabel,
+        hash = joaat(Vehicles[i].model),
+        shop = Vehicles[i].shop
+    }
 end

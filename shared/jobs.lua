@@ -232,11 +232,7 @@ QBShared.Jobs = {
         },
         whitelist = true
 	},
-	['mechanic'] = {
-		label = 'Mechanic',
-        type = "mechanic",
-		defaultDuty = true,
-		offDutyPay = false,
+	['ambulance'] = {label = 'EMS', type = 'ems', defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Recruit.',
@@ -262,10 +258,7 @@ QBShared.Jobs = {
         },
         whitelist = true
 	},
-	['judge'] = {
-		label = 'Honorary',
-		defaultDuty = true,
-		offDutyPay = false,
+	['realestate'] = {label = 'Real Estate', defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Judge',
@@ -274,10 +267,7 @@ QBShared.Jobs = {
         },
         whitelist = true,
 	},
-	['lawyer'] = {
-		label = 'Law Firm',
-		defaultDuty = true,
-		offDutyPay = false,
+	['taxi'] = {label = 'Taxi', defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Associate',
@@ -295,10 +285,7 @@ QBShared.Jobs = {
         },
         whitelist = true
 	},
-	['reporter'] = {
-		label = 'Reporter',
-		defaultDuty = true,
-		offDutyPay = false,
+	['cardealer'] = {label = 'Vehicle Dealer', defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Journalist',
@@ -307,10 +294,7 @@ QBShared.Jobs = {
         },
         whitelist = false,
 	},
-	['trucker'] = {
-		label = 'Trucker',
-		defaultDuty = true,
-		offDutyPay = false,
+	['mechanic'] = {label = 'LS Customs', type = "mechanic", defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Driver',
@@ -319,10 +303,7 @@ QBShared.Jobs = {
         },
         whitelist = false,
 	},
-	['tow'] = {
-		label = 'Towing',
-		defaultDuty = true,
-		offDutyPay = false,
+    ['mechanic2'] = {label = 'LS Customs', type = "mechanic", defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Driver',
@@ -331,10 +312,7 @@ QBShared.Jobs = {
         },
         whitelist = false,
 	},
-	['garbage'] = {
-		label = 'Garbage',
-		defaultDuty = true,
-		offDutyPay = false,
+    ['mechanic3'] = {label = 'LS Customs', type = "mechanic", defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Collector',
@@ -343,10 +321,7 @@ QBShared.Jobs = {
         },
         whitelist = false,
 	},
-	['vineyard'] = {
-		label = 'Vineyard',
-		defaultDuty = true,
-		offDutyPay = false,
+    ['beeker'] = {label = 'Beeker\'s Garage', type = "mechanic", defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Picker',
@@ -355,10 +330,7 @@ QBShared.Jobs = {
         },
         whitelist = false,
 	},
-	['hotdog'] = {
-		label = 'Hotdog',
-		defaultDuty = true,
-		offDutyPay = false,
+    ['bennys'] = {label = 'Benny\'s Original Motor Works', type = "mechanic", defaultDuty = true, offDutyPay = false,
 		grades = {
             ['0'] = {
                 name = 'Sales',
