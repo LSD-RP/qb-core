@@ -26,6 +26,9 @@ QBShared.Weapons = {
 	[`weapon_bread`] 				 = {['name'] = 'weapon_bread', 			['label'] = 'Baquette', 			['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked / Executed / Beat down / Murdered / Battered'},
 	[`weapon_stone_hatchet`] 		 = {['name'] = 'weapon_stone_hatchet', 	['label'] = 'Stone Hatchet',        ['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Knifed / Stabbed / Eviscerated'},
 	[`weapon_metaldetector`] 		 = {['name'] = 'weapon_metaldetector', 	['label'] = 'Metal Detector',       ['weapontype'] = 'Melee',	['ammotype'] = nil,	['damagereason'] = 'Melee killed / Whacked'},
+	[`weapon_paintball`] 		 		= {['name'] = 'weapon_paintball', 		['label'] = 'Paintball gun',       	['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Painted'},
+	[`weapon_railgunxm3`] 		 		= {['name'] = 'weapon_railgunxm3', 		['label'] = 'Railgun',       		['weapontype'] = 'Heavy Weapons',	['ammotype'] = 'AMMO_RPG',	['damagereason'] = 'Boomed'},
+	[`weapon_pistolxm3`] 				= {['name'] = 'weapon_pistolxm3', 		['label'] = 'WM 29 Pistol', 		['weapontype'] = 'Pistol',	['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 
 
     -- Handguns
@@ -149,4 +152,6 @@ QBShared.Weapons = {
 	-- Animals
     [`weapon_animal`]               = {['name'] = 'weapon_animal',	['label'] = 'Animal',	['weapontype'] = 'Animals',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
     [`weapon_cougar`]               = {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['weapontype'] = 'Animals',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+
+	[`weapon_paintball`]			= {['name'] = 'weapon_paintball',['label'] = 'PaintBall Weapon',['ammotype'] = nil,	['damagereason'] = 'Painted'},
 }

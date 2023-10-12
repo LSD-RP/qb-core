@@ -33,6 +33,11 @@ QBShared.Items = {
 	['weapon_throwingaxe'] 		 	 = {['name'] = 'weapon_throwingaxe', 		 	['label'] = 'Throwing Axe', 	        ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_THROWINGAXE.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Throwing Axe'},
 	['weapon_hose'] 		 	 	 = {['name'] = 'weapon_hose', 		 			['label'] = 'Fire Hose', 	        	['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_HOSE.png', 			['unique'] = true, 		['useable'] = true, 	['description'] = 'Fire Hose'},
 	['weapon_metaldetector'] 		 = {['name'] = 'weapon_metaldetector', 		 	['label'] = 'Metal Detector', 	        ['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'WEAPON_METALDETECTOR.png', ['unique'] = true, 		['useable'] = true, 	['description'] = 'Metal Detector'},
+	['weapon_paintball'] 			 = {['name'] = 'weapon_paintball', 		 	  	['label'] = 'PaintBall Weapon', 		['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PAINTBALL',		['image'] = 'weapon_paintball.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Paint your friends with this :)'},
+
+	['weapon_candycane'] 			 = {['name'] = 'weapon_candycane', 		 	  	['label'] = 'Candy Cane', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_candycane.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Yummy'},
+	['weapon_railgunxm3'] 			 = {['name'] = 'weapon_railgunxm3', 		 	['label'] = 'Rail Gun', 				['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_RPG',				['image'] = 'weapon_railgunxm3.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Scary'},
+	['weapon_pistolxm3'] 			 = {['name'] = 'weapon_pistolxm3', 		 		['label'] = 'WM 29 Pistol', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_PISTOL',			['image'] = 'weapon_pistolxm3.png', 	['unique'] = true, 		['useable'] = true, 	['description'] = 'Pistol'},
 
 
 	-- Handguns
@@ -251,6 +256,7 @@ QBShared.Items = {
 
 	-- Ammo ITEMS
 	['pistol_ammo'] 				 = {['name'] = 'pistol_ammo', 			  	  	['label'] = 'Pistol ammo', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'pistol_ammo.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Pistols'},
+	['paintball_ammo'] 				 = {['name'] = 'paintball_ammo', 			  	  	['label'] = 'Pistol ammo', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'pistol_ammo.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Paintball Guns'},
 	['rifle_ammo'] 				 	 = {['name'] = 'rifle_ammo', 			  	  	['label'] = 'Rifle ammo', 				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'rifle_ammo.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Rifles'},
 	['smg_ammo'] 				 	 = {['name'] = 'smg_ammo', 			  	  		['label'] = 'SMG ammo', 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'smg_ammo.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Sub Machine Guns'},
 	['shotgun_ammo'] 				 = {['name'] = 'shotgun_ammo', 			  	  	['label'] = 'Shotgun ammo', 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'shotgun_ammo.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Shotguns'},
@@ -397,6 +403,7 @@ QBShared.Items = {
 	['pure_acetone'] 				 = {['name'] = 'pure_acetone', 					['label'] = 'Bottled Acetone', 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'pure_acetone.png', 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A drug ingredient'},
 	['chemicals'] 				 	 = {['name'] = 'chemicals', 					['label'] = 'Chemicals', 				['weight'] = 15, 		['type'] = 'item', 		['image'] = 'chemicals.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A drug ingredient'},
 	['ether'] 				 	 	 = {['name'] = 'ether', 						['label'] = 'Ether', 					['weight'] = 250, 		['type'] = 'item', 		['image'] = 'ether.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A drug ingredient'},
+	['mescalin'] 					 = {['name'] = 'mescalin', 						['label'] = 'Mescalin', 				['weight'] = 20, 		['type'] = 'item', 		['image'] = 'mescalin.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A bit of the good stuff'},
 
 
 	-- Seed And Weed
@@ -623,7 +630,7 @@ QBShared.Items = {
 
 	-- Vanilla Unicorn
 	['rum'] 					 	= {['name'] = 'rum', 			  	  			['label'] = 'Rum', 						['weight'] = 100, 		['type'] = 'item', 		['image'] = 'whiskey.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'A beverage that seems to make you think you can fight anybody'},
-	['cocacola'] 					= {['name'] = 'cocacola', 			  	  		['label'] = 'CocaCola', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'cocacola.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Probably have some issues with your blood suger level'},
+	['cocacola'] 					= {['name'] = 'cocacola', 			  	  		['label'] = 'CocaCola', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'cocacola.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Probably have some issues with your blood suger level'},
 
 
 	-- witch craft items
@@ -684,9 +691,8 @@ QBShared.Items = {
 
 
 
-
-
-
+	['explosivevest'] 		 		 = {['name'] = 'explosivevest', 					['label'] = 'Explosive Vest', 			['weight'] = 5000, 	    ['type'] = 'item', 		['image'] = 'vest.png', 				['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Definitely just a normal vest'},
+	['god'] 			 			 = {['name'] = 'god', 		 	  				['label'] = 'God Item', 			    ['weight'] = 0, 		['type'] = 'item', 			['image'] = 'god.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'No more worries'},
 
 
 

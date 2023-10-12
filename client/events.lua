@@ -272,6 +272,7 @@ Citizen.CreateThread(function()
 	SetWeaponDamageModifier(`WEAPON_FLARE`, 0.3)
 	SetWeaponDamageModifier(`WEAPON_RAYPISTOL`, 0.01)
     SetWeaponDamageModifier(`WEAPON_STUNGUN`, 0.00)
+    SetWeaponDamageModifier(`WEAPON_PAINTBALL`, 0.00)
 	-- SetWeaponDamageModifier(`WEAPON_RPG`, 0.1)
 end)
   
